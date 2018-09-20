@@ -1,0 +1,9 @@
+<% if @error_msg.present? %>
+  <div class="error_message">
+    <p class="warning"><%= @error_msg %></p>
+  </div>
+<% end %>
+
+<h1><%= @breed_name %></h1>
+
+<img src="<%= @breed_img_url %>" alt="<%= @breed_name %>">

@@ -1,0 +1,13 @@
+<% if @error_msg.present? %>
+  <div class="error_message">
+    <p class="warning"><%= @error_msg %></p>
+  </div>
+<% end %>
+
+<% if @breed_names.present? %>
+  <div>
+    <% @breed_names.each do |breed_name| %>
+      <p><%= link_to breed_name, show_detail_breeds_path(breed_name: breed_name) %></p>
+    <% end %>
+  </div>
+<% end %>
